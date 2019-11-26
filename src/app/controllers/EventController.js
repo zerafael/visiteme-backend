@@ -1,4 +1,5 @@
 import Event from "../models/Event";
+import Company from "../models/Company";
 
 class EventController {
 	async index(request, response) {
@@ -17,6 +18,12 @@ class EventController {
 
 	async store(request, response) {
 		const event = await Event.create(request.body);
+
+		const company = await Company.findOne({ where : { id : request.body.id }});
+
+		if(!company) {
+			return response.status(400).json({ error: 'Company does not found!'});
+		}
 
 		return response.json(event);
 	}
