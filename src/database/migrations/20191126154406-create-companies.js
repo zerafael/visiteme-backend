@@ -16,11 +16,15 @@ module.exports = {
         allowNull: false,
         unique: true,
       },
-      description: {
+      password: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      password_hash: {
+      location: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      description: {
         type: Sequelize.STRING,
         allowNull: false,
       },
