@@ -18,10 +18,6 @@ module.exports = {
 			description: {
 				type: Sequelize.STRING
 			},
-			location: {
-				type: Sequelize.STRING,
-				allowNull: false
-			},
 			date: {
 				type: Sequelize.DATE,
 				allowNull: false

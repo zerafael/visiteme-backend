@@ -8,7 +8,6 @@ class Event extends Model {
 				email: Sequelize.STRING,
 				password: Sequelize.STRING,
 				description: Sequelize.STRING,
-				location: Sequelize.STRING,
 				date: Sequelize.DATE
 			},
 			{
