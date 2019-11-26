@@ -1,15 +1,21 @@
 {
-  "name": "visiteme-backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/zerafael/visiteme-backend.git",
-  "author": "José Rafael <zerafael1@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.1",
-    "sequelize": "^5.21.2"
-  },
-  "devDependencies": {
-    "sequelize-cli": "^5.5.1"
-  }
+	"name": "visiteme-backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/zerafael/visiteme-backend.git",
+	"author": "José Rafael <zerafael1@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nodemon src/server.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"sequelize": "^5.21.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.1",
+		"sequelize-cli": "^5.5.1",
+		"sucrase": "^3.10.1"
+	}
 }
