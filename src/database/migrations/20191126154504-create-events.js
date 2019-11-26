@@ -14,11 +14,9 @@ module.exports = {
 			description: {
 				type: Sequelize.STRING
 			},
-			available_vacancy: {
-				type: Sequelize.INTEGER
-			},
-			filled_vacancy: {
-				type: Sequelize.INTEGER
+			vacancy: {
+				type: Sequelize.INTEGER,
+				allowNull: false
 			},
 			date: {
 				type: Sequelize.DATE,

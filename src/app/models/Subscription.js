@@ -7,8 +7,8 @@ class Subscription extends Model {
 	}
 
 	static associate(models) {
-		this.belongsTo(models.Company, { foreignKey: "company_id", as: "company" });
-		this.belongsTo(models.Student, { foreignKey: "student_id", as: "student" });
+		this.belongsTo(models.Event, { foreignKey: "id_event", as: "event" });
+		this.belongsTo(models.Student, { foreignKey: "id_student", as: "student" });
 	}
 }
 

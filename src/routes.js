@@ -32,7 +32,7 @@ routes.post("/events", EventController.store);
 // Get subscriptions that the student is subscribed
 routes.get("/subscriptions/:id", SubscriptionStudentController.index);
 // Subscribe to a event
-routes.get("/subscriptions", SubscriptionStudentController.store);
+routes.post("/subscriptions", SubscriptionStudentController.store);
 
 // Get subscriptions from event
 routes.get("/subscriptions/event/:id", SubscriptionCompanyController.index);

@@ -7,7 +7,7 @@ module.exports = {
 				autoIncrement: true,
 				primaryKey: true
 			},
-			id_company: {
+			id_event: {
 				type: Sequelize.INTEGER,
 				references: {
 					model: "events",
