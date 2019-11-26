@@ -9,6 +9,8 @@ const routes = new Router();
 
 // Get companies
 routes.get("/companies", CompanyController.index);
+// Get specific company
+routes.get("/company", CompanyController.getCompany);
 // Create company
 routes.post("/companies", CompanyController.store);
 
@@ -19,6 +21,8 @@ routes.post("/students", StudentController.store);
 
 // Get events
 routes.get("/events", EventController.index);
+// Get events by company
+routes.get("/events/:id", EventController.indexByCompany);
 // Create students
 routes.post("/events", EventController.store);
 

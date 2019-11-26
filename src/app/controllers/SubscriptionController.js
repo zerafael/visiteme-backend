@@ -1,4 +1,4 @@
-class CompanyController {
+class SubscriptionController {
 	async index(request, response) {}
 
 	async store(request, response) {}
