@@ -5,8 +5,6 @@ class Event extends Model {
 		super.init(
 			{
 				name: Sequelize.STRING,
-				email: Sequelize.STRING,
-				password: Sequelize.STRING,
 				description: Sequelize.STRING,
 				date: Sequelize.DATE
 			},
@@ -15,6 +13,10 @@ class Event extends Model {
 			}
 		);
 		return this;
+	}
+
+	static associate(models) {
+		this.belongsTo(models.Company, { foreignKey: "id_company", as: "company" });
 	}
 }
 
