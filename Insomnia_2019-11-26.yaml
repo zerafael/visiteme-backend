@@ -1,0 +1,374 @@
+_type: export
+__export_format: 4
+__export_date: 2019-11-26T19:49:39.191Z
+__export_source: insomnia.desktop.app:v7.0.3
+resources:
+  - _id: req_53224cbabfed4157909fd5f1da2721ff
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email" : "teste@gmail.com"
+        }
+    created: 1574793101994
+    description: ""
+    headers:
+      - id: pair_cb190b51eebd44998d986345d7181810
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574786824646
+    method: GET
+    modified: 1574795616221
+    name: List One
+    parameters: []
+    parentId: fld_02bf7d369e77439c9a4ce9cf5f8099d1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/company"
+    _type: request
+  - _id: fld_02bf7d369e77439c9a4ce9cf5f8099d1
+    created: 1574786239317
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1574786261205
+    modified: 1574786268700
+    name: Company
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: request_group
+  - _id: wrk_82ae946c6bad47cab3893c3361b1c92e
+    created: 1574786194208
+    description: ""
+    modified: 1574786194208
+    name: RSXP
+    parentId: null
+    _type: workspace
+  - _id: req_aa740896c6f94e34bdbcd43fc0e61d7f
+    authentication: {}
+    body: {}
+    created: 1574786824596
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574786824596
+    method: GET
+    modified: 1574786835424
+    name: List
+    parameters: []
+    parentId: fld_02bf7d369e77439c9a4ce9cf5f8099d1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/companies"
+    _type: request
+  - _id: req_41b9aa33b6c140a5895b928b229adccc
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Teste 2",
+        	"description": "Empresa trabalha com React",
+        	"location": "Rua Afonso Pena, 22, Campo Grande/MS",
+        	"email": "teste2@gmail.com",
+        	"password": "123"
+        }
+    created: 1574786293416
+    description: ""
+    headers:
+      - id: pair_8769f5b8c774442dac690fb6b5f9457d
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574786293416
+    method: POST
+    modified: 1574792839771
+    name: Create
+    parameters: []
+    parentId: fld_02bf7d369e77439c9a4ce9cf5f8099d1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/companies"
+    _type: request
+  - _id: req_7f190f911ab84854af7ab0594a6b9e9d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "teste@gmail.com"
+        }
+    created: 1574795586146
+    description: ""
+    headers:
+      - id: pair_af3c9e1f5cec482e93b16ef82120681c
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574795586146
+    method: GET
+    modified: 1574795662535
+    name: List One
+    parameters: []
+    parentId: fld_69981201ed4f460092ae188e2505fe6b
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/student"
+    _type: request
+  - _id: fld_69981201ed4f460092ae188e2505fe6b
+    created: 1574786246485
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1574786258114.5
+    modified: 1574786287159
+    name: Student
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: request_group
+  - _id: req_eb0e7a3d95dc4adfa110278213de8e29
+    authentication: {}
+    body: {}
+    created: 1574795559595
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574795559595
+    method: GET
+    modified: 1574795576777
+    name: List
+    parameters: []
+    parentId: fld_69981201ed4f460092ae188e2505fe6b
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/students"
+    _type: request
+  - _id: req_8c88963ccaa04f1186dcfde30dd3af24
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Fabio",
+        	"school_name": "Bionatus",
+        	"location": "Rua teste, 2243",
+        	"email": "febinho@gmail.com",
+        	"password": "123"
+        }
+    created: 1574786847502
+    description: ""
+    headers:
+      - id: pair_bbd3f36bd7f748cf94ecd701fd2f1889
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574786847502
+    method: POST
+    modified: 1574795648186
+    name: Create
+    parameters: []
+    parentId: fld_69981201ed4f460092ae188e2505fe6b
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/students"
+    _type: request
+  - _id: req_d515bc139e8f4521b9a9fd5656673cd6
+    authentication: {}
+    body: {}
+    created: 1574792759562
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574792759562
+    method: GET
+    modified: 1574792767011
+    name: List
+    parameters: []
+    parentId: fld_abd746008b7445edbfd9129511352566
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/events"
+    _type: request
+  - _id: fld_abd746008b7445edbfd9129511352566
+    created: 1574786255024
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1574786255024
+    modified: 1574786255024
+    name: Event
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: request_group
+  - _id: req_e7a172f71e3048f0a1f202f74eb5c626
+    authentication: {}
+    body: {}
+    created: 1574792774931
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574792055117
+    method: GET
+    modified: 1574792891051
+    name: List by Company
+    parameters: []
+    parentId: fld_abd746008b7445edbfd9129511352566
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/events/1"
+    _type: request
+  - _id: req_5c849182043245329db3a7266f8ad16d
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Evento",
+        	"description": "Descrição do evento",
+        	"date": "2019-12-29T20:00:00-04:00",
+        	"id_company": 1,
+        	"vacancy": 10
+        }
+    created: 1574791350672
+    description: ""
+    headers:
+      - id: pair_426caaea529443c184c67fe3dfad4dc1
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574791350672
+    method: POST
+    modified: 1574797241339
+    name: Create
+    parameters: []
+    parentId: fld_abd746008b7445edbfd9129511352566
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/events"
+    _type: request
+  - _id: req_2c575b27c1604734b620b1e31e270c77
+    authentication: {}
+    body: {}
+    created: 1574796125981
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574796125981
+    method: GET
+    modified: 1574796166330
+    name: List student subscriptions
+    parameters: []
+    parentId: fld_3efdca1ef025402a8c6979579e72e6f1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/subscriptions/"
+    _type: request
+  - _id: fld_3efdca1ef025402a8c6979579e72e6f1
+    created: 1574786261155
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1574786250754.5
+    modified: 1574786283967
+    name: Subscription
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: request_group
+  - _id: req_319055f0d54c4acd9df7c27a1ceb6da4
+    authentication: {}
+    body: {}
+    created: 1574795810317
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1574795810317
+    method: GET
+    modified: 1574796095962
+    name: List event subscriptions
+    parameters: []
+    parentId: fld_3efdca1ef025402a8c6979579e72e6f1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/subscriptions/event/"
+    _type: request
+  - _id: req_5f4a51963d884c8db20e60f0f5a5a42e
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id_student": "1",
+        	"id_event": "1"
+        }
+    created: 1574796144882
+    description: ""
+    headers:
+      - id: pair_9b4a19ed580448d3958131f82470a05d
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1574795810267
+    method: POST
+    modified: 1574797474988
+    name: Create
+    parameters: []
+    parentId: fld_3efdca1ef025402a8c6979579e72e6f1
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ baseurl  }}/subscriptions"
+    _type: request
+  - _id: env_0a912f12ee6d9c008bf117d348e83d4e16fb251b
+    color: null
+    created: 1574786194304
+    data:
+      baseurl: http://localhost:4000
+    dataPropertyOrder:
+      "&":
+        - baseurl
+    isPrivate: false
+    metaSortKey: 1574786194304
+    modified: 1574786227623
+    name: Base Environment
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: environment
+  - _id: jar_0a912f12ee6d9c008bf117d348e83d4e16fb251b
+    cookies: []
+    created: 1574786194311
+    modified: 1574786194311
+    name: Default Jar
+    parentId: wrk_82ae946c6bad47cab3893c3361b1c92e
+    _type: cookie_jar
