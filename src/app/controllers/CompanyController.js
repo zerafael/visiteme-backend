@@ -7,7 +7,7 @@ class CompanyController {
 		return response.json(companies);
 	}
 
-	async getCompany(request, response) {
+	async indexOne(request, response) {
 		const { email } = request.body;
 		const companies = await Company.findAll({ where: { email } });
 

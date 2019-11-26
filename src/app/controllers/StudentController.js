@@ -1,4 +1,4 @@
-import Student from '../models/Student'
+import Student from "../models/Student";
 
 class StudentController {
 	async index(request, response) {
@@ -8,7 +8,9 @@ class StudentController {
 	}
 
 	async indexOne(request, response) {
-		const student = await Student.findOne({ where: { email: request.body.email } });
+		const student = await Student.findOne({
+			where: { email: request.body.email }
+		});
 
 		return response.json(student);
 	}
