@@ -1,13 +1,30 @@
 import { Router } from "express";
 
 import CompanyController from "./app/controllers/CompanyController";
+import StudentController from "./app/controllers/StudentController";
+import EventController from "./app/controllers/EventController";
+import SubscriptionController from "./app/controllers/SubscriptionController";
 
 const routes = new Router();
 
 // Get companies
-routes.get("/company", CompanyController.index);
-
+routes.get("/companies", CompanyController.index);
 // Create company
-routes.post("/company", CompanyController.store);
+routes.post("/companies", CompanyController.store);
+
+// Get students
+routes.get("/students/:id", StudentController.index);
+// Create students
+routes.post("/students", StudentController.store);
+
+// Get events
+routes.get("/events", EventController.index);
+// Create students
+routes.post("/events", EventController.store);
+
+// Get subscriptions
+routes.get("/subscriptions", SubscriptionController.index);
+// Subscribe to a event
+routes.get("/subscriptions", SubscriptionController.store);
 
 export default routes;
