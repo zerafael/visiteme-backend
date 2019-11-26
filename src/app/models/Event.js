@@ -6,6 +6,8 @@ class Event extends Model {
 			{
 				name: Sequelize.STRING,
 				description: Sequelize.STRING,
+				available_vacancy: Sequelize.INTEGER,
+				filled_vacancy: Sequelize.INTEGER,
 				date: Sequelize.DATE
 			},
 			{
