@@ -4,7 +4,7 @@ import CompanyController from "./app/controllers/CompanyController";
 import StudentController from "./app/controllers/StudentController";
 import EventController from "./app/controllers/EventController";
 import SubscriptionStudentController from "./app/controllers/SubscriptionStudentController";
-import SubscriptionCompanyController from "./app/controllers/SubscriptionCompanyController";
+import SubscriptionEventController from "./app/controllers/SubscriptionEventController";
 
 const routes = new Router();
 
@@ -35,7 +35,7 @@ routes.get("/subscriptions/:id", SubscriptionStudentController.index);
 routes.post("/subscriptions", SubscriptionStudentController.store);
 
 // Get subscriptions from event
-routes.get("/subscriptions/event/:id", SubscriptionCompanyController.index);
+routes.get("/subscriptions/event/:id", SubscriptionEventController.index);
 
 // Get subscription to event
 
