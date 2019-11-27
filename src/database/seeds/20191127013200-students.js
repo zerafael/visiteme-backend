@@ -8,7 +8,7 @@ module.exports = {
 				{
 					name: "John Doe",
 					email: "john@gmail.com",
-					location: "Rua São josé, 432, Campo Grande/MS",
+					location: "Rua São josé, 432, São Paulo/MS",
 					school_name: "Bionatus",
 					password: "123",
 					created_at: new Date(),

@@ -6,26 +6,26 @@ module.exports = {
 			"subscriptions",
 			[
 				{
-					id_student: 2,
-					id_event: 2,
+					id_student: 1,
+					id_event: 1,
 					created_at: new Date(),
 					updated_at: new Date()
 				},
 				{
-					id_student: 2,
-					id_event: 4,
-					created_at: new Date(),
-					updated_at: new Date()
-				},
-				{
-					id_student: 3,
-					id_event: 4,
+					id_student: 1,
+					id_event: 3,
 					created_at: new Date(),
 					updated_at: new Date()
 				},
 				{
 					id_student: 2,
 					id_event: 3,
+					created_at: new Date(),
+					updated_at: new Date()
+				},
+				{
+					id_student: 1,
+					id_event: 2,
 					created_at: new Date(),
 					updated_at: new Date()
 				}
